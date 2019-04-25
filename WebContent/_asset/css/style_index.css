@@ -1,0 +1,178 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../font/iconfont.woff2') format('woff2'),
+      url('../font/iconfont.woff') format('woff'),
+      url('../font/iconfont.ttf') format('truetype'),
+      url('../font/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.viri_form{
+	display: none;
+	position: absolute;
+	width:300px;
+	height: 100px;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #3498db;
+	border-radius: 8px;
+
+}
+.viri_form input{
+	display: block;
+	height: 30px;
+	margin:10px auto;
+}
+.viri_form input[type='text']{
+	width: 80%;
+	outline: none;
+	line-height: 30px;
+	border-radius: 10px;
+	border:none;
+	text-indent: 1em;
+}
+
+::-webkit-input-placeholder ,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder{ 
+    color: #d2d2d2 !important;
+    text-overflow: ellipsis;
+    font-size: 13px 
+}
+.viri_form input[type='submit']{
+	width: 60%;
+	padding: 5px 20px;
+	border: 2px solid #33db80;
+	border-radius: 10px;
+	color:#33db80;
+}
+.viri_form input[type='submit']:hover{
+	color: #fff;
+	background-color: #33db80;
+}
+.viri_form span{
+	position: absolute;
+	top:1px;
+	right: 1px;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family:  "华文新魏";
+	/*background-image: url('./fancy-cushion.png');*/
+	background-image: url('../images/green_bamboo.png');
+	background-blend-mode: luminosity;
+
+}
+
+.box{
+	padding: 20px;
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: transparent;
+	box-shadow: 2px -2px 10px 5px #3498db;
+	border-radius: 20px;
+	text-align: center;
+
+}
+.box h1{
+	color: #eee;
+	font-weight: 400;
+	margin-bottom: 50px;
+}
+.form{
+	width: 100%;
+	height: auto;
+	margin: 30px auto;
+	text-align: center;
+	overflow: hidden;
+}
+
+.form input[type = 'file']{
+	display: inline-flex;
+	width:80%;
+	padding:5px;
+	outline: none;
+	border:2px solid #2ecc71;
+	border-radius: 10px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #2ecc71;
+	color: #fff;
+	font-size: 18px;
+}
+
+.form input[type = 'submit']{
+	display: block;
+	width: 120px;
+	margin: 20px auto;
+	padding:5px 20px;
+	outline: none;
+	border:2px solid #3498db;
+	border-radius: 20px;
+	color: #3498db;
+	font-size: 18px;
+	background-color: transparent;
+
+}
+
+
+.form input[type = 'file']:hover{
+	background-color: #2ecc71;
+	color: #fff;
+}
+
+.form input[type = 'submit']:hover{
+	width:140px;
+	background-color: #3498db;
+	color: #fff;
+	cursor: pointer;
+
+}
+a.btn{
+	display: block;
+	position: relative;
+	bottom:10px;
+	left:50%;
+	transform: translateX(-50%);
+	text-decoration: none;
+	color: #3498db;
+	width: 120px;
+	padding: 5px 20px;
+	border: 2px solid #3498db;
+	border-radius: 25px;
+}
+a.btn:hover{
+	background-color: #3498db;
+	color:#fff;
+	width: 140px;
+}
+
+/* 验证 */
+
+#password {
+	border-radius:8px;
+}
+
+.close_btn:hover{
+	cursor: pointer;
+}
+

@@ -1,0 +1,74 @@
+*{
+margin: 0;
+padding: 0;
+text-decoration: none;
+}
+
+body{
+	font-family: "华文新魏";
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../font/iconfont.woff2') format('woff2'),
+      url('../font/iconfont.woff') format('woff'),
+      url('../font/iconfont.ttf') format('truetype'),
+      url('../font/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*页面样式*/
+div.wrap{
+  width: 98%;
+  margin:5px auto;
+  height: 100%;
+}
+div.wrap h2{
+  text-align: center;
+  margin-bottom: 20px;
+  color:#666;
+}
+div.wrap span{
+  font-size: 14px;
+  display: block;
+  text-align: left;
+  color:#666;
+}
+.textarea{
+  display: block;
+  width: 98%;
+  margin: 0 auto;
+  min-height: 20px;
+  font-size: 16px;
+  color: #fff;
+  height: auto;
+  line-height: 20px;
+  border:none;
+  border-radius: 3px;
+  background-color: skyblue;
+}
+.box{
+  width:96%;
+  margin:10px auto;
+
+}
+div.wrap img{
+  width:96%;
+  margin:auto;
+  border:3px solid skyblue;
+  border-radius: 10px;
+}
+
+#bigImg{
+  position: absolute;
+  width: 100%;
+  top:50%;
+  transform: translateY(-50%);
+}

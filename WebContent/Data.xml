@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IstallData>
+    <install>
+        <id>123456</id>
+        <port>9990</port>
+    </install>
+    <install>
+        <id>654321</id>
+        <port>9991</port>
+    </install>
+    <install>
+        <id>111111</id>
+        <port>9992</port>
+    </install>
+    <install>
+        <id>222222</id>
+        <port>9993</port>
+    </install>
+    <install>
+        <id>333333</id>
+        <port>9994</port>
+    </install>
+    
+</IstallData>
