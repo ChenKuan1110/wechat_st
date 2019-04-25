@@ -1,9 +1,9 @@
 package com.wechat.servlet;
 
-import java.io.File;
+
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.net.URL;
+
 import java.util.Map;
 
 import javax.servlet.ServletException;
@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.commons.io.FileUtils;
+
 import org.dom4j.DocumentException;
 
 
@@ -164,11 +164,21 @@ public class DemoServlet extends HttpServlet {
 					message = MessageUtil.initText(toUserName, fromUserName, "调用扫描成功！");
 				}else if(MessageUtil.EVENT_SCANCODE_WAITmsg.equals(eventType)) { 		//扫码发送消息
 					System.out.println("com.wechat.servlet --- 扫描到的信息："+map.get("ScanCodeInfo"));
-					message = MessageUtil.initText(toUserName, fromUserName, "扫描成功，开启设备中！！！");
+					//增加扫描功能，模拟发送信息
+					request.setAttribute("equipment_code", 123456);
+					request.setAttribute("fromUserName",fromUserName);
+					request.setAttribute("toUserName",toUserName);
+					request.getRequestDispatcher("TestServlet").forward(request, response);
+					
+					
 				}else if (MessageUtil.EVENT_LOCATION.equals(eventType)) {	//上报位置事件
 					String label = map.get("Label");
 					System.out.println("com.wechat.servlet --- 获取到的地理位置（）："+label);
 					message = MessageUtil.initText(toUserName, fromUserName, label);
+				}else {
+					//未知消息处理,防止异常
+					message = MessageUtil.initText(toUserName, fromUserName, "success");
+					
 				}
 			}
 			
